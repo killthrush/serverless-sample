@@ -1,0 +1,25 @@
+{
+  "name": "serverless-sample",
+  "version": "1.0.0",
+  "description": "A sample AWS Lambda project using serverless and python 3.6",
+  "main": "main.js",
+  "scripts": {
+    "test": "test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.org:killthrush/serverless-sample"
+  },
+  "keywords": [
+    "serverless",
+    "aws",
+    "lambda"
+  ],
+  "author": "Ben Peterson",
+  "license": "MIT",
+  "dependencies": {
+    "serverless": "1.21.0",
+    "serverless-aws-alias": "^1.5.0",
+    "serverless-pseudo-parameters": "^1.1.5"
+  }
+}

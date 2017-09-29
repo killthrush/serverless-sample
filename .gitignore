@@ -99,3 +99,11 @@ ENV/
 
 # mypy
 .mypy_cache/
+
+# pycharm
+.idea
+
+# serverless framework
+node_modules
+.serverless
+vendored/
