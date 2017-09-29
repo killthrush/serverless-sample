@@ -7,5 +7,11 @@ from src.utils import setup_logging
 logger = setup_logging('serverless-sample')
 
 
-def test_handler_1(event, context):
+def echo(event, context):
     logger.info('Received event: {}'.format(event))
+
+    return {
+        'statusCode': 200,
+        'body': 'Hello World! Event was {}'.format(event)
+    }
+

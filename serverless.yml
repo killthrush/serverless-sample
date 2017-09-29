@@ -53,12 +53,12 @@ provider:
       - "glue:*"
     Resource: "*"
 functions:
-  test-handler-1:
-    name: TestHandler1${self:provider.stage}
-    handler: my_handler.test_handler_1
+  echo-handler:
+    name: EchoHandler${self:provider.stage}
+    handler: src/echo_handler.echo
     events:
       - http:
-          path: test-handler-1
+          path: echo
           method: post
           private: true
 
